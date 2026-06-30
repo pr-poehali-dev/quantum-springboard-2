@@ -34,11 +34,22 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
               style={{ transitionDelay: "200ms" }}
             >
               <p className="max-w-md text-sm leading-relaxed text-foreground/90 md:text-lg">
-                Автор копилки — <span className="text-foreground font-medium">Атагелдиев Хаджымухаммет</span>, учитель математики.
+                Студенты 2 курса, которые хотят упростить работу учителя математики и найти лёгкий способ поиска материала.
               </p>
-              <p className="max-w-md text-sm leading-relaxed text-foreground/90 md:text-lg">
-                Собирает проверенные материалы для уроков и подготовки к экзаменам — то, что реально работает в классе.
-              </p>
+              <div className="max-w-md space-y-1.5">
+                {[
+                  "Атагелдиев Хаджымухаммет",
+                  "Довлетгелдиев Якуп",
+                  "Полищук Леонид",
+                  "Костяева Виктория",
+                  "Зозуля Диана",
+                ].map((name, i) => (
+                  <div key={i} className="flex items-center gap-3">
+                    <span className="font-mono text-xs text-foreground/40">0{i + 1}</span>
+                    <span className="text-sm text-foreground/90 md:text-base">{name}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 
