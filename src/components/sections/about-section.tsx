@@ -34,10 +34,10 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
               style={{ transitionDelay: "200ms" }}
             >
               <p className="max-w-md text-sm leading-relaxed text-foreground/90 md:text-lg">
-                Я учитель математики и собираю эту копилку из собственных проверенных материалов для уроков и подготовки к экзаменам.
+                Автор копилки — <span className="text-foreground font-medium">Атагелдиев Хаджымухаммет</span>, учитель математики.
               </p>
               <p className="max-w-md text-sm leading-relaxed text-foreground/90 md:text-lg">
-                Здесь — то, что реально работает в классе: понятные конспекты, наглядные презентации и задания с ответами.
+                Собирает проверенные материалы для уроков и подготовки к экзаменам — то, что реально работает в классе.
               </p>
             </div>
           </div>
